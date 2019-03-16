@@ -1,8 +1,11 @@
 <app-name></app-name>
 
-<nav>
-  <a routerLink="/home" routerLinkActive="active">Home</a>
-  <a routerLink="/about" routerLinkActive="active">About</a>
+<nav  class="navbar navbar-default">
+  <ul class="nav navbar-nav">
+    <li class="active"><a routerLink="/home" routerLinkActive="active">Home</a></li>
+    <li class="active"><a routerLink="/timeline" routerLinkActive="active">Timeline</a></li>
+    <li class="active"><a routerLink="/about" routerLinkActive="active">About</a></li>
+  </ul>
 </nav>
 
 <router-outlet></router-outlet>
