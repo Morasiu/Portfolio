@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { NameComponent } from './name/name.component';
-import { HomeComponent } from './home/home.component';
+import { ProjectsComponent } from './Projects/Projects.component';
 import { RouterModule, Routes } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { GamesComponent } from './games/games.component';
@@ -16,8 +16,8 @@ import { TimelineComponent } from './timeline/timeline.component';
 
 export const routeConfig:Routes = [
     {
-        path: 'home',
-        component: HomeComponent,
+        path: 'projects',
+        component: ProjectsComponent,
         children: [
           { path: '',
           redirectTo: 'games',
@@ -38,7 +38,7 @@ export const routeConfig:Routes = [
       component: AboutComponent
     },
     { path: '',
-    redirectTo: '/home',
+    redirectTo: '/projects',
     pathMatch: 'full'
   },
 
@@ -51,7 +51,7 @@ export const routeConfig:Routes = [
     AppComponent,
     AboutComponent,
     NameComponent,
-    HomeComponent,
+    ProjectsComponent,
     PageNotFoundComponent,
     GamesComponent,
     GameComponent,
