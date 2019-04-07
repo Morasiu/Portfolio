@@ -1,5 +1,8 @@
-<nav>
-  <a routerLink="/projects/mobile" routerLinkActive="active">Mobile</a>
-  <a routerLink="/projects/games" routerLinkActive="active">Games</a>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item active"><a class="nav-link" routerLink="/projects/mobile" routerLinkActive="active">Mobile</a></li>
+    <li class="nav-item"><a class="nav-link" routerLink="/projects/games" routerLinkActive="active">Games</a></li>
+  </ul>
 </nav>
+
 <router-outlet></router-outlet>
