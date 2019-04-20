@@ -40,9 +40,9 @@ export const routeConfig:Routes = [
     { path: '',
     redirectTo: '/projects',
     pathMatch: 'full'
-  },
-
-  { path: '**', component: PageNotFoundComponent }
+    },
+    {path: '404', component: PageNotFoundComponent},
+    {path: '**', redirectTo: '/404'}
 ];
 
 
