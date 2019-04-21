@@ -2,9 +2,16 @@
   <h1 class="text-light h3 text-center">
     {{name}}
   </h1>
-  <p class="text-center">
-    {{short_description}}
-  </p>
+  <div>
+    <p class="text-center" id="description">
+      {{short_description}}
+    </p>
+    <!-- <div class="text-center">
+      <span *ngIf="link!=undefined" >
+          <a href={{link}}><span>Check it on Github </span><img src="../../assets/images/GitHub-Mark/GitHub-Mark-Light-32px.png"></a>
+      </span>
+    </div> -->
+  </div>
   <div class="smartphone">
     <div class="content">
       <img src="{{image_src}}">
