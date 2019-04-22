@@ -13,6 +13,7 @@ import { MobileListComponent } from './mobile-list/mobile-list.component';
 import { MobileComponent } from './mobile/mobile.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { SkillComponent } from './skill/skill.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 
 export const routeConfig:Routes = [
@@ -59,7 +60,8 @@ export const routeConfig:Routes = [
     MobileListComponent,
     MobileComponent,
     TimelineComponent,
-    SkillComponent
+    SkillComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,

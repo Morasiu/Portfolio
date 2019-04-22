@@ -3,8 +3,8 @@
     <div class="col-sm-6" >
       <h1 class="text-light" id="name">Hubert Morawski</h1>
       <h6 class="text-light" id="contact">
-          Email: hubert.morawski2@gmail.com <br>
-          City: Cracov
+        Email: hubert.morawski2@gmail.com <br>
+        City: Cracov
       </h6>
       <p id="description">
         I am a programmer who loves solving puzzles and learning new things. 
@@ -17,10 +17,62 @@
       <img src="./assets/images/im2.png" alt="My photo" class="p-2" id="portrait">
     </div>
   </div>
-  <div id="skills" class="text-center">
-      <h3 class="text-light text-center">Skills</h3>
-      <ul>
-        <app-skill name="AAA" imagePath="./assets/images/thumbnails/asp_small.png"></app-skill>
-      </ul>
+  <div id="skills" class="">
+    <h2 class="text-light text-center">Skills</h2>
+    
+    <h4 class="text-light col-2  offset-md-3">Languages</h4>
+    <app-skill name="C#" imagePath="./assets/images/thumbnails/dot_net_small.png" level=4></app-skill>
+    <app-skill name="Python" imagePath="./assets/images/thumbnails/python_small.png" level=3></app-skill>
+    <app-skill name="Java" imagePath="./assets/images/thumbnails/java_small.png" level=2></app-skill>
+    
+    <h4 class="text-light col-2  offset-md-3">Technologies</h4>
+    <app-skill name="ASP.Net Core" imagePath="./assets/images/thumbnails/asp_small.png" level=4></app-skill>
+    <app-skill name="Visual Studio" imagePath="./assets/images/thumbnails/vs.png" level=4></app-skill>
+    <app-skill name="Unity" imagePath="./assets/images/thumbnails/unity.png" level=3></app-skill>
+    <app-skill name="Git" imagePath="./assets/images/thumbnails/git_small.png" level=3></app-skill>
+    <app-skill name="Linux" imagePath="./assets/images/thumbnails/tux_small.png" level=2></app-skill>
+    <app-skill name="Android Studio" imagePath="./assets/images/thumbnails/android_small.png" level=2></app-skill>
+    <app-skill name="VR - Oculus" imagePath="./assets/images/thumbnails/oculus_light_small.png" level=2></app-skill>
+    <app-skill name="SQL" imagePath="./assets/images/thumbnails/db_small.png" level=2></app-skill>
+    <app-skill name="Blender" imagePath="./assets/images/thumbnails/blender_small.png" level=2></app-skill>
+    <app-skill name="Angular" imagePath="./assets/images/thumbnails/angular.png" level=1></app-skill>
+    <app-skill name="Bootstrap" imagePath="./assets/images/thumbnails/bootstrap-solid.svg" level=1></app-skill>
+    
+    <h4 class="text-light col-2  offset-md-3">Other</h4>
+    <app-skill name="English" imagePath="./assets/images/thumbnails/english_small.png" level=4></app-skill>
+    <app-skill name="Rest API" imagePath="./assets/images/thumbnails/rest_small.png" level=4></app-skill>
+    <app-skill name="Unit tests" imagePath="https://img.icons8.com/flat_round/64/000000/checkmark.png" level=3></app-skill>
+    <app-skill name="Design patterns" imagePath="./assets/images/thumbnails/design_small.png" level=2></app-skill>
+    
+    <h2 class="text-light text-center">Experience</h2>
+    <app-experience job="Software Engineer" 
+    companyLogo="./assets/images/company/tronel.png"
+    time="01/2019 - 03/2019"
+    description="I was reponsible for mantaining WinForms and WPF desktop application. My main tasks were: implementing new features based on technical documentation, cooperating with worldwide team, fixing bugs, writing documentation.">
+    </app-experience>
+    <app-experience job="Junior Programmer" 
+    companyLogo="./assets/images/company/qumak.png"
+    time="04/2018 - 12/2018"
+    description="I was developing Web API  in .Net Core with C# and Entity Framework for employee manager system from scratch. Hence I was in charge of designing database, writing new features, unit testing with xUnit and writing API documentation.">
+    </app-experience>
+    <app-experience job="Junior Solutions Engineer" 
+    companyLogo="./assets/images/company/qumak.png"
+    time="07/2017 - 03/2018"
+    description="I wrote multiple Python apps for our QumakOS. It was Arch-based linux distro. For exmaple: Digital Signage system, document trimmer (using OpenCV), chat, autoupadater, push notification app, API client.">
+    </app-experience>
+  </div>
+
+  <div id="education">
+    <h2 class="text-light text-center">Education</h2>
+    <app-experience job="Wyższa Szkoła Ekonomii i Informatyki"
+    companyLogo="./assets/images/company/wsei.png"
+    time="2018 - 2021"
+    description="Major: Information Technology
+    Minor: Designing and development of computer games "
+    ></app-experience>
+  </div>
+
+  <div id="certificates">
+    
   </div>
 </div>
