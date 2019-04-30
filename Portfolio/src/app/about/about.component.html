@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" id="container">
   <div class="row justify-content-center" id="infos">
     <div class="col-sm-6" >
       <h1 class="text-light" id="name">Hubert Morawski</h1>
@@ -45,33 +45,33 @@
     <app-skill name="Design patterns" imagePath="./assets/images/thumbnails/design_small.png" level=2></app-skill>
   
     <h2 class="text-light text-center">Experience</h2>
-    <app-experience job="Software Engineer" 
-    companyLogo="./assets/images/company/tronel.png"
+    <app-about-field title="Software Engineer" 
+    logo="./assets/images/company/tronel.png"
     time="01/2019 - 03/2019"
     description="I was reponsible for mantaining WinForms and WPF desktop application. My main tasks were: implementing new features based on technical documentation, cooperating with worldwide team, fixing bugs, writing documentation.">
-    </app-experience>
+    </app-about-field>
 
-    <app-experience job="Junior Programmer" 
-    companyLogo="./assets/images/company/qumak.png"
+    <app-about-field title="Junior Programmer" 
+    logo="./assets/images/company/qumak.png"
     time="04/2018 - 12/2018"
     description="I was developing Web API  in .Net Core with C# and Entity Framework for employee manager system from scratch. Hence I was in charge of designing database, writing new features, unit testing with xUnit and writing API documentation.">
-    </app-experience>
+    </app-about-field>
 
-    <app-experience job="Junior Solutions Engineer" 
-    companyLogo="./assets/images/company/qumak.png"
+    <app-about-field title="Junior Solutions Engineer" 
+    logo="./assets/images/company/qumak.png"
     time="07/2017 - 03/2018"
     description="I wrote multiple Python apps for our QumakOS. It was Arch-based linux distro. For exmaple: Digital Signage system, document trimmer (using OpenCV), chat, autoupadater, push notification app, API client.">
-    </app-experience>
+    </app-about-field>
   </div>
 
   <div id="education">
     <h2 class="text-light text-center">Education</h2>
-    <app-experience job="College of Economics and Computer Science"
-    companyLogo="./assets/images/company/wsei.png"
+    <app-about-field title="College of Economics and Computer Science"
+    logo="./assets/images/company/wsei.png"
     time="2018 - 2021"
     description="Major: Information Technology
     Minor: Designing and development of computer games "
-    ></app-experience>
+    ></app-about-field>
   </div>
 
   <div id="certificates">
@@ -86,16 +86,13 @@
     </div>
   </div>
 
-  <div id="certificates">
+  <div id="awards">
     <h2 class="text-light text-center">Awards</h2>
-    <div class="text-light offset-md-3">
-      <img src="./assets/images/microsoft_small.png" id="microsoft_logo">
-      <div class="justify-content-center">
-        <h5>98-375 MTA - HTML5 Application Development Fundamentals</h5>
-        <h5>98-364 MTA - Database Fundamentals </h5>
-        <h5>98-361 MTA - Software Development Fundamentals (C#)</h5>
-      </div>
-    </div>
+    <app-about-field title="1st Place Hackathon City Coders Płock"
+    logo="./assets/images/Logo_City_coders_plock.png"
+    time="2017"
+    description="I made Android app called TeamUp, which is presented in Mobile section in my portfolio. It was an app for finding sport partners, teams for games etc."
+    ></app-about-field>
   </div>
 </div>
   
