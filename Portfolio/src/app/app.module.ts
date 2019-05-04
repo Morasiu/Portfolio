@@ -8,12 +8,12 @@ import { ProjectsComponent } from './projects/projects.component';
 import { RouterModule, Routes } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { GamesComponent } from './games/games.component';
-import { GameComponent } from './game/game.component';
 import { MobileListComponent } from './mobile-list/mobile-list.component';
 import { MobileComponent } from './mobile/mobile.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { SkillComponent } from './skill/skill.component';
 import { AboutFieldComponent } from './about-field/about-field.component';
+import { MobileGameComponent } from './mobile-game/mobile-game.component';
 
 
 export const routeConfig:Routes = [
@@ -40,11 +40,11 @@ export const routeConfig:Routes = [
       component: AboutComponent
     },
     { path: '',
-    redirectTo: '/projects',
+    redirectTo: '/about',
     pathMatch: 'full'
     },
+    {path: '**', redirectTo: '/404'},
     {path: '404', component: PageNotFoundComponent},
-    {path: '**', redirectTo: '/404'}
 ];
 
 
@@ -56,7 +56,7 @@ export const routeConfig:Routes = [
     ProjectsComponent,
     PageNotFoundComponent,
     GamesComponent,
-    GameComponent,
+    MobileGameComponent,
     MobileListComponent,
     MobileComponent,
     TimelineComponent,
