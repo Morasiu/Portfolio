@@ -14,7 +14,10 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { SkillComponent } from './skill/skill.component';
 import { AboutFieldComponent } from './about-field/about-field.component';
 import { MobileGameComponent } from './mobile-game/mobile-game.component';
-
+import { PCGameComponent } from './pc-game/pc-game.component';
+import { GameVideoComponent } from './game-video/game-video.component';
+import { WebComponent } from './web/web.component';
+import { WebProjectComponent } from './web-project/web-project.component';
 
 export const routeConfig:Routes = [
     {
@@ -31,6 +34,9 @@ export const routeConfig:Routes = [
           { path: 'games',
             component: GamesComponent 
           },
+          { path: 'web',
+          component: WebComponent 
+        },
         ]
     },
     { path: 'timeline',
@@ -61,7 +67,11 @@ export const routeConfig:Routes = [
     MobileComponent,
     TimelineComponent,
     SkillComponent,
-    AboutFieldComponent
+    AboutFieldComponent,
+    PCGameComponent,
+    GameVideoComponent,
+    WebComponent,
+    WebProjectComponent,
   ],
   imports: [
     BrowserModule,

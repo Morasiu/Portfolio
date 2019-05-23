@@ -4,7 +4,7 @@
       <img src="{{imagePath}}" alt="listImage" id="bullet_image">
       <span>  {{name}} </span>
     </div>
-    <div class="col-4">
+    <div class="col-4" *ngIf="level > 0;">
       <span *ngFor="let item of levelList;">
         <span *ngIf="item; else elseBlock"><i class="fas fa-circle"></i></span>
         <ng-template #elseBlock><i class="far fa-circle"></i></ng-template>
