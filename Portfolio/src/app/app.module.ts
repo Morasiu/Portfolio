@@ -18,6 +18,7 @@ import { PCGameComponent } from './pc-game/pc-game.component';
 import { GameVideoComponent } from './game-video/game-video.component';
 import { WebComponent } from './web/web.component';
 import { WebProjectComponent } from './web-project/web-project.component';
+import { ImageService } from './services/ImageService';
 
 export const routeConfig:Routes = [
     {
@@ -80,7 +81,9 @@ export const routeConfig:Routes = [
       { enableTracing: true } // <-- debugging purposes only
     )
   ],
-  providers: [],
+  providers: [
+    ImageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
