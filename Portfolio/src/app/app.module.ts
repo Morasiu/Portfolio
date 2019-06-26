@@ -19,6 +19,7 @@ import { GameVideoComponent } from './game-video/game-video.component';
 import { WebComponent } from './web/web.component';
 import { WebProjectComponent } from './web-project/web-project.component';
 import { ImageService } from './services/ImageService';
+import { OtherComponent } from './other/other.component';
 
 export const routeConfig:Routes = [
     {
@@ -36,8 +37,11 @@ export const routeConfig:Routes = [
             component: GamesComponent 
           },
           { path: 'web',
-          component: WebComponent 
-        },
+            component: WebComponent,
+          },
+          { path: 'other',
+            component: OtherComponent 
+          }
         ]
     },
     { path: 'timeline',
@@ -73,6 +77,7 @@ export const routeConfig:Routes = [
     GameVideoComponent,
     WebComponent,
     WebProjectComponent,
+    OtherComponent,
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,7 @@ export class ImageService {
         "Java": this.rootPath + "java_small.png",
         "ASP.Net Core": this.rootPath + "asp_small.png",
         "Visual Studio": this.rootPath + "vs.png",
+        "Visual Studio Code": this.rootPath + "vs_code.png",
         "Unity": this.rootPath + "unity.png",
         "Git": this.rootPath + "git_small.png",
         "Linux": this.rootPath + "tux_small.png",
