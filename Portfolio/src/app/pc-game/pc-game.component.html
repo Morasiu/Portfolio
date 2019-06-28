@@ -1,7 +1,10 @@
 <div class="container">
     <h1 class="text-light text-center">{{name}}</h1>
     <p class="text-light text-center">{{description}}</p>
-    <div class="row">
+    <div *ngIf="link" class="text-center" id="link">
+        Check it<a href="{{link}}"> here </a><i class="fab fa-github"></i>
+    </div>
+    <div class="text-center">
         <img src={{image}}
         alt="PC Game image">
     </div>

@@ -9,4 +9,5 @@ export class PCGameComponent {
   @Input() name:string;
   @Input() description:string;
   @Input() image:string;
+  @Input() link:string;
 }
