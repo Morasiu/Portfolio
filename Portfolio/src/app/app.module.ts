@@ -51,7 +51,7 @@ export const routeConfig:Routes = [
       component: AboutComponent
     },
     { path: '',
-    redirectTo: '/about',
+    redirectTo: '/projects/games',
     pathMatch: 'full'
     },
     {path: '**', redirectTo: '/404'},
