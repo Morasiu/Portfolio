@@ -1,6 +1,6 @@
 <div class="text-light">
-  <div class="row">
-    <div class="col justify-content-start offset-md-3">
+  <div class="row justify-content-start">
+    <div class="col">
       <img *ngIf="imagePath==null; else defaultImage"  [src]="skillImagePath" alt="fromService" id="bullet_image">
       <ng-template #defaultImage><img [src]="imagePath" alt="fromArgument" id="bullet_image"></ng-template>
       <span>  {{name}}  </span>

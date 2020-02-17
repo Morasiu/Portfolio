@@ -1,10 +1,16 @@
 <div class="container">
-    <h1 class="text-light text-center">{{name}}</h1>
-    <p class="text-light text-center">{{description}}</p>
-    <div *ngIf="link" class="text-center" id="link">
-        Check it<a href="{{link}}"> here </a><i class="fab fa-github"></i>
+    <div class="row justify-content-center">
+        <h1 class="text-light text-center">{{name}}</h1>
     </div>
-    <div class="text-center">
+    <div class="row justify-content-center">
+        <p class="text-light text-center">{{description}}</p>
+    </div>
+    <div *ngIf="link" class="justify-content-center row" id="link">
+        <div class="text-center">
+            Check it <a href="{{link}}"> here </a><i class="fab fa-github"></i>
+        </div>
+    </div>
+    <div class="justify-content-md-center row">
         <img src={{image}} alt="PC Game image">
     </div>
 </div>

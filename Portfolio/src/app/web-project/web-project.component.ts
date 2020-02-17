@@ -8,7 +8,9 @@ import { Component, OnInit, Input } from '@angular/core';
     <p class="text-light text-center">{{time}}</p>
     <p class="text-light text-center">{{description}}</p>
     <div *ngFor="let tech of technologiesList">
-      <div class="text-light offset-md-3"><app-skill name="{{tech}}"></app-skill></div>
+      <div class="text-light row justify-content-center">
+        <app-skill name="{{tech}}"></app-skill>
+      </div>
     </div>
     <br>
   </div>`,
