@@ -8,8 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
     <p class="text-light text-center">{{time}}</p>
     <p class="text-light text-center">{{description}}</p>
     <div *ngFor="let tech of technologiesList">
-      <div class="text-light row justify-content-center">
-        <app-skill name="{{tech}}"></app-skill>
+      <div class="row justify-content-center">
+        <app-skill name="{{tech}}" class="col"></app-skill>
       </div>
     </div>
     <br>
@@ -24,8 +24,6 @@ export class WebProjectComponent implements OnInit {
   @Input() technologies:string;
 
   technologiesList:string[];
-  private hasBootstrap = () => this.technologiesList.includes("Bootstrap");
-
   constructor() { }
 
   ngOnInit() {
