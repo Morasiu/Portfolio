@@ -24,6 +24,9 @@ export class ImageService {
         "Unit tests": "https://img.icons8.com/flat_round/64/000000/checkmark.png",
         "xUnit": this.rootPath + "x_unit.png",
         "Design patterns": this.rootPath + "design_small.png",
+        "Tensorflow": this.rootPath + "tensorflow.png",
+        "Machine Learning": this.rootPath + "machine_learning.png",
+        "Telegram": this.rootPath + "telegram.png",
     };
 
     getImagePathFor(skill: string):string {
