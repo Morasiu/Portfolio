@@ -1,0 +1,53 @@
+﻿@using Portfolio.Services
+<Row>
+    <Column ColumnSize="ColumnSize.Is1.OnDesktop.IsAuto.OnMobile"></Column>
+    <Column ColumnSize="ColumnSize.IsFull.OnMobile.Is3.OnDesktop">
+        <Tooltip Text="@SchoolName">
+            <img src="@SchoolImage" id="logo"/>
+        </Tooltip>
+    </Column>
+    <Column ColumnSize="ColumnSize.IsFull.OnMobile.Is4.OnDesktop" Class="align-self-center">
+        <Heading Size="HeadingSize.Is4" Alignment="TextAlignment.Center">@SchoolName</Heading>
+    </Column>
+    <Column ColumnSize="ColumnSize.IsFull.OnMobile.IsAuto.OnDesktop" Class="align-self-center">
+        @($"{Start:yyyy} - {End:yyyy}")
+    </Column>
+    <Column ColumnSize="ColumnSize.Is2.OnDesktop"/>
+</Row>
+
+<Row Margin="Margin.Is3.FromTop">
+    <Column>
+        <Text Alignment="TextAlignment.Center">
+            Major: @Major
+        </Text>
+    </Column>
+</Row>
+
+<Row>
+    <Column>
+        <Text Alignment="TextAlignment.Center">
+            Minor: @Minor
+        </Text>
+    </Column>
+</Row>
+
+
+@code {
+
+    [Parameter]
+    public string SchoolName { get; set; }
+
+    [Parameter]
+    public DateTime Start { get; set; }
+
+    [Parameter]
+    public DateTime End { get; set; }
+
+    [Parameter]
+    public string Major { get; set; }
+
+    [Parameter]
+    public string Minor { get; set; }
+
+    private string SchoolImage => SchoolImageService.Images[SchoolName];
+}

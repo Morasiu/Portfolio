@@ -1,0 +1,13 @@
+﻿<Row Margin="Margin.Is2.FromTop.Is2.FromBottom">
+    <Column>
+        <Heading Size="HeadingSize.Is2" Alignment="TextAlignment.Center" Margin="Margin.Is4.FromTop">
+            @Title
+        </Heading>
+    </Column>
+</Row>
+
+@code {
+    [Parameter]
+    public string Title { get; set; }
+
+}

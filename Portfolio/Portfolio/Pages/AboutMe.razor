@@ -1,0 +1,189 @@
+﻿@using Portfolio.Components.Educations
+@using Portfolio.Components.Expriences
+@using Portfolio.Components.Achivements
+@using Portfolio.Components.AboutSectionTitles
+@using Portfolio.Components.Skills
+
+
+@page "/AboutMe"
+
+<div id="content">
+    <Container Class="text-center">
+        <Row>
+            <Column>
+                <Figure Size="FigureSize.Is256x256">
+                    <FigureImage Source="Images/profile.png" AlternateText="Profile picture"/>
+                </Figure>
+            </Column>
+        </Row>
+        <Row>
+            <Column>
+                <Heading Size="HeadingSize.Is1" Alignment="TextAlignment.Center">Hubert Morawski</Heading>
+            </Column>
+        </Row>
+        <Row>
+            <Column>
+                <Paragraph Alignment="TextAlignment.Center" Italic="true">
+                    C# passionate who loves making bugs and removing features... Wait a second...
+                </Paragraph>
+            </Column>
+        </Row>
+        <Row>
+            <Column>
+                <Text Alignment="TextAlignment.Center">
+                    E-mail: hubert.morawski2@gmail.com
+                </Text>
+            </Column>
+        </Row>
+        <Row/>
+
+        <AboutSectionTitle Title="Skills"/>
+
+        <Row>
+            <Column>
+                <Heading Size="HeadingSize.Is4" Alignment="TextAlignment.Center" Margin="Margin.Is4.FromTop">
+                    Languages
+                </Heading>
+            </Column>
+        </Row>
+
+        <Skill Name="C#" Level="SkillLevel.Four"/>
+        <Skill Name="Python" Level="SkillLevel.Two"/>
+        <Skill Name="Rust" Level="SkillLevel.One"/>
+
+        <Row>
+            <Column>
+                <Heading Size="HeadingSize.Is4" Alignment="TextAlignment.Center" Margin="Margin.Is4.FromTop">
+                    Technologies
+                </Heading>
+            </Column>
+        </Row>
+
+        <Skill Name="ASP.Net" Level="SkillLevel.Four"/>
+        <Skill Name="Visual Studio" Level="SkillLevel.Four"/>
+        <Skill Name="Git" Level="SkillLevel.Three"/>
+        <Skill Name="Unity" Level="SkillLevel.Two"/>
+        <Skill Name="Linux" Level="SkillLevel.Two"/>
+        <Skill Name="SQL" Level="SkillLevel.Two"/>
+        <Skill Name="Google Cloud Platform" Level="SkillLevel.One"/>
+        <Skill Name="Angular" Level="SkillLevel.One"/>
+        <Skill Name="Bootstrap" Level="SkillLevel.One"/>
+
+        <Row>
+            <Column>
+                <Heading Size="HeadingSize.Is4" Alignment="TextAlignment.Center" Margin="Margin.Is4.FromTop">
+                    Others
+                </Heading>
+            </Column>
+        </Row>
+
+        <Skill Name="Rest API" Level="SkillLevel.Five"/>
+        <Skill Name="English" Level="SkillLevel.Four"/>
+        <Skill Name="Unit Tests" Level="SkillLevel.Four"/>
+        <Skill Name="Design Patters" Level="SkillLevel.Three"/>
+
+        <AboutSectionTitle Title="Experience"/>
+
+        <Experience
+            CompanyName="Code Hydra"
+            JobTitle="Owner"
+            JobDescription=@("I started this company in May 2019. Right now I'm just self-employed freelancer looking for some opportunities. I'm specialized in .Net Core Web API projects.")
+            JobStart="@(new DateTime(2019, 05, 1))"/>
+
+        <Experience
+            CompanyName="Tronel"
+            JobTitle="Software Engineer"
+            JobDescription=@("I was responsible for maintaining WinForms and WPF desktop application. My main tasks were:implementing new features based on technical documentation, cooperating with worldwide team, fixing bugs, writing documentation.")
+            JobStart="@(new DateTime(2019, 01, 1))"
+            JobEnd="@(new DateTime(2019, 03, 1))"/>
+
+        <Experience
+            CompanyName="Qumak"
+            JobTitle="Junior Programmerr"
+            JobDescription=@("I was developing Web API in .Net Core with C# and Entity Framework for employee manager system from scratch. Hence I was in charge of designing database, writing new features, unit testing with xUnit and writing API documentation.")
+            JobStart="@(new DateTime(2018, 04, 1))"
+            JobEnd="@(new DateTime(2018, 12, 1))"/>
+
+        <Experience
+            CompanyName="Qumak"
+            JobTitle="Junior Solutions Engineer"
+            JobDescription=@("I wrote multiple Python apps for our QumakOS. It was Arch-based linux distro. For example: Digital Signage system, document trimmer (using OpenCV), chat, autoupadater, push notification app, API client.")
+            JobStart="@(new DateTime(2018, 04, 1))"
+            JobEnd="@(new DateTime(2018, 12, 1))"/>
+
+
+        <AboutSectionTitle Title="Education"/>
+
+        <Education
+            SchoolName="College of Economics and Computer Science"
+            Major="Information Technology"
+            Minor="Designing and development of computer games"
+            Start="@(new DateTime(2018, 1, 1))"
+            End="@(new DateTime(2021, 1, 1))"/>
+
+        <AboutSectionTitle Title="Certificates"/>
+
+        <Row>
+            <Column ColumnSize="ColumnSize.Is1"/>
+            <Column ColumnSize="ColumnSize.Is3" Class="align-self-center">
+                <img src="Images/microsoft_small.png"/>
+            </Column>
+            <Column>
+                <Row>
+                    <Column>
+                        <Text>98-375 MTA - HTML5 Application Development Fundamentals</Text>
+                    </Column>
+                </Row>
+                <Row>
+                    <Column>
+                        <Text>98-364 MTA - Database Fundamentals</Text>
+                    </Column>
+                </Row>
+                <Row>
+                    <Column>
+                        <Text>98-361 MTA - Software Development Fundamentals (C#)</Text>
+                    </Column>
+                </Row>
+            </Column>
+        </Row>
+
+        <AboutSectionTitle Title="Achievements"/>
+
+        <Achivement
+            EventName="Sheep Your Hack"
+            Title="1st Place Hackathon Sheep Your Hack 2"
+            EventDate="@(new DateTime(2020, 11, 17))"
+            Description="Printy is a web app, which solves the problem of difficult access to printing spots. Printy allows any private person to share his idle printer and earn some money from it. With Printy, customer can easily find and upload files to print and then just go pick up it from the neighbour."/>
+
+
+        <Achivement
+            EventName="City Coders Płock"
+            Title="1st Place Hackathon City Coders Płock"
+            EventDate="@(new DateTime(2017, 05, 21))"
+            Description="I've made app called TeamUp. It was an app for finding sport partners, teams for competitive games, gym buddies etc. I was responsible for making Android App using Android studio."/>
+
+        <Row Class="hide_print justify-content-center">
+            <Column ColumnSize="ColumnSize.IsAuto.OnDesktop">
+                <Button Color="Color.Primary" Clicked="DownloadPdf">
+                    Download CV as PDF
+                </Button>
+            </Column>
+            <Column ColumnSize="ColumnSize.IsAuto.OnDesktop" Class="align-self-center">
+                <Tooltip Text="Works in Chrome. Use 'Save as PDF` option.">
+                    <i class="fas fa-question-circle"></i>
+                </Tooltip>
+            </Column>
+        </Row>
+
+    </Container>
+</div>
+
+@inject IJSRuntime JS;
+
+@code {
+
+    async Task DownloadPdf() {
+        await JS.InvokeVoidAsync("downloadPdfJs", "content");
+    }
+
+}
