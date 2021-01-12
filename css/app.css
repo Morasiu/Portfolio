@@ -5,3 +5,11 @@ body {
     background-color: #212121 !important;
 }
 
+#loading {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
