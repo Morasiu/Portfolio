@@ -1,21 +1,23 @@
-﻿<Bar
-  Breakpoint="Breakpoint.Desktop"
-  Background="Background.Dark"
-  ThemeContrast="ThemeContrast.Dark"
->
-  <BarBrand>
-    Hubert Morawski
-  </BarBrand>
-  <BarToggler />
-  <BarMenu>
-    <BarStart>
-      <BarItem>
-        <BarLink To="Projects"><i class="fas fa-laptop-code"></i> Projects</BarLink>
-      </BarItem>
-      <BarItem>
-        <BarLink To="AboutMe"><i class="far fa-user"></i> About Me</BarLink>
-      </BarItem>
-    </BarStart>
-  </BarMenu>
+﻿@using Portfolio.Pages
+<Bar
+    Breakpoint="Breakpoint.Desktop"
+    Background="Background.Dark"
+    ThemeContrast="ThemeContrast.Dark">
+    <BarBrand>
+        Hubert Morawski
+    </BarBrand>
+    <BarToggler/>
+    <BarMenu>
+        <BarStart>
+            <BarItem>
+                <BarLink To="Projects"><i class="fas fa-laptop-code"></i> Projects</BarLink>
+            </BarItem>
+            <BarItem>
+                <BarLink To="@nameof(MyTimeline)"><i class="fas fa-stream"></i> Timeline</BarLink>
+            </BarItem>
+            <BarItem>
+                <BarLink To="@(nameof(AboutMe))"><i class="far fa-user"></i> About Me</BarLink>
+            </BarItem>
+        </BarStart>
+    </BarMenu>
 </Bar>
- 

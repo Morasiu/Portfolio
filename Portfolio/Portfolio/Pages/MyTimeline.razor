@@ -1,0 +1,90 @@
+﻿@page "/MyTimeline"
+
+@using BlazorTimeline
+
+<Timeline Title="My Carrer"
+          TitleColor="#FFFFFF"
+          TitleBgColor="#554DE0"
+          TextColor="#FFFFFF"
+          TextBgColor="#121212">
+    <TimelineItem Title="The story still continues..." Time="Now" Position="ItemPosition.Right">
+        I'm still learning new stuff. Working on some cool things and enjoying programming!
+    </TimelineItem>
+    <TimelineItem Title="1st Place Hackathon Sheep Your Hack 2" Time="17.11.2020">
+        I've attended SheepYourHack 2 hackthon with two of mine friends and won.
+        We've made an app called web Printy, which solves the problem of difficult access to printing spots.
+        I was reposonsible for making REST API using .Net Core.
+        <div class="img-container">
+            <img src="Images/Events/sheep_your_hack.png" alt="SheepYourHack2 logo"/>
+        </div>
+    </TimelineItem>
+    <TimelineItem Title="Code Hydra" Time="05.2019" Position="ItemPosition.Right">
+        I've founded my own company called Cody Hydra and became self-employed.
+        <div class="img-container">
+            <img src="Images/Companies/codehydra_full_logo.png" alt="Code hydra logo"/>
+        </div>
+    </TimelineItem>
+    <TimelineItem Title="TapTake startup" Time="05.2019">
+        I quit Tronel to work with a startup on app called TapTake. I was a shopping platform foccused on small and
+        medium stores. I was reposponsible for making a REST API using .Net Core, managing cloud and database.
+    </TimelineItem>
+    <TimelineItem Title="Software Engineer at Tronel" Time="01.2019" Position="ItemPosition.Right">
+        I quit Qumak and started working at the middle programming position at Tronel.
+        I was responsible for maintaining the WinForms and WPF desktop application.
+        My main tasks were:
+        <ul>
+            <li>Implementing new features based on technical documentation</li>
+            <li>Cooperating with a worldwide team,</li>
+            <li>Fixing bugs</li>
+            <li>Writing documentation</li>
+        </ul>
+        <div class="img-container">
+            <img src="Images/Companies/tronel.png" alt="Tronel logo"/>
+        </div>
+    </TimelineItem>
+    <TimelineItem Title="Change to Junior Programmer" Time="04.2018">
+        Even I already was programming in my job, my position name didn't reflect that. So I've got myself
+        the position name change to Junior Programmer.
+    </TimelineItem>
+    <TimelineItem Title="Started attending WSEI" Time="10.2017" Position="ItemPosition.Right">
+        I've started external studies at WSEI. My major was Information Technology.
+        <div class="img-container">
+            <img src="Images/Schools/wsei.png" alt="WSEI logo"/>
+        </div>
+    </TimelineItem>
+    <TimelineItem Title="My first programming job" Time="07.2017">
+        After I've won the hackathon I got a job offer as Junior Solutions Engineer for a company called Qumak.
+        I wrote multiple Python apps for our QumakOS (Arch-based Linux distro). For example:
+        <ul>
+            <li>Digital Signage system</li>
+            <li>Document trimmer (using OpenCV)</li>
+            <li>Chat app</li>
+            <li>AutoUpadater serivce</li>
+            <li>Push notification app</li>
+        </ul>
+        <div class="img-container">
+            <img src="Images/Companies/Qumak.png" alt="Qumak logo"/>
+        </div>
+    </TimelineItem>
+    <TimelineItem Title="1st place City Coders Płock Hackathon" Time="21.05.2017" Position="ItemPosition.Right">
+        I've attended (with two of my friends) my first hackathon just after my final exams. And... I've won!
+        I've made an app called TeamUp. It was an app for finding sports partners, teams for competitive games, gym buddies etc.
+        I was responsible for making an Android App using Android studio.
+
+        <div class="img-container">
+            <img src="Images/Events/Logo_City_coders_plock.png" alt="City Coders Płock logo"/>
+        </div>
+    </TimelineItem>
+    <TimelineItem Title="My first Android app" Time="2017" ButtonText="Github" Link="https://github.com/Morasiu/WhatShouldIDo">
+        I've stopped using Unity and started to learn Android app development. I've made a simple project
+        called "What Should I do?", which was the wheel of fortune app.
+    </TimelineItem>
+    <TimelineItem Title="My first game" Time="2016" Position="ItemPosition.Right" ButtonText="Monnies" Link="https://assetstore.unity.com/packages/templates/packs/monnie-pet-simulator-91450">
+        I've switched to learning game development with Unity and C#. Also, I've made my first game called Moonies.
+        And I've sold the project as a pet simulator game template.
+    </TimelineItem>
+    <TimelineItem Title="Beginnings" Time="2015">
+        I've started coding in high school. I attended a programming interest group where
+        we were learning basic programming stuff using C++. I've made me first Hello World here!
+    </TimelineItem>
+</Timeline>
