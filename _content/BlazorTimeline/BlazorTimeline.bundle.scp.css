@@ -88,20 +88,18 @@ a[b-brzhsl6bgj] {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%;
-}
-#timeline .timeline-item .timeline-icon svg[b-brzhsl6bgj] {
-    position: relative;
-    top: 14px;
-    left: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #timeline .timeline-item .timeline-content[b-brzhsl6bgj] {
     width: 45%;
     background: #fff;
     padding: 20px;
-    -webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
-    -ms-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
-    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.57);;
+    -moz-box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.57);
+    -ms-box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.57);
+    box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.57);
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
