@@ -3,6 +3,7 @@
 /* /Components/Achivements/Achivement.razor.rz.scp.css */
 #logo[b-ku7pyz6gb1] {
     height: 50px;
+    width: 80%;
 }
 /* /Components/Educations/Education.razor.rz.scp.css */
 #logo[b-8ay91oy6l7] {
@@ -36,4 +37,5 @@ img[b-1r888hsw61] {
 
 .img-container[b-1r888hsw61] {
     text-align: center;
+    margin-top: 0.5rem;
 }
