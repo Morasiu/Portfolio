@@ -2,19 +2,38 @@
 <Bar
     Breakpoint="Breakpoint.Desktop"
     Background="Background.Dark"
-    ThemeContrast="ThemeContrast.Dark">
+    ThemeContrast="ThemeContrast.Dark"
+    @ref="_bar">
     <BarBrand>
         <BarItem>
-            <BarLink To="" >
+            <BarLink To="">
                 Hubert Morawski
             </BarLink>
         </BarItem>
     </BarBrand>
-    <BarToggler/>
+    <BarToggler />
     <BarMenu>
         <BarStart>
             <BarItem>
-                <BarLink To="Projects"><i class="fas fa-laptop-code"></i> Projects</BarLink>
+                <BarDropdown>
+                    <BarDropdownToggle>
+                        <i class="fas fa-laptop-code"></i> Projects
+                    </BarDropdownToggle>
+                    <BarDropdownMenu>
+                        <BarDropdownItem Clicked="CloseBar">
+                            <BarLink Class="text-dark" To="Projects/Web"><i class="fas fa-window-restore"></i> Web</BarLink>
+                        </BarDropdownItem>
+                        <BarDropdownItem Clicked="CloseBar">
+                            <BarLink Class="text-dark" To="Projects/Web"><i class="fas fa-gamepad"></i> Games</BarLink>
+                        </BarDropdownItem>
+                        <BarDropdownItem Clicked="CloseBar">
+                            <BarLink Class="text-dark" To="Projects/Mobile"><i class="fas fa-mobile"></i> Mobile</BarLink>
+                        </BarDropdownItem>
+                        <BarDropdownItem Clicked="CloseBar">
+                            <BarLink Class="text-dark" To="Projects/Web"><i class="fas fa-flask"></i> Others</BarLink>
+                        </BarDropdownItem>
+                    </BarDropdownMenu>
+                </BarDropdown>
             </BarItem>
             <BarItem>
                 <BarLink To="@nameof(MyTimeline)"><i class="fas fa-stream"></i> Timeline</BarLink>
@@ -25,3 +44,11 @@
         </BarStart>
     </BarMenu>
 </Bar>
+
+@code {
+    private Bar _bar;
+
+    private void CloseBar() {
+        _bar.Visible = false;
+    }
+}

@@ -1,5 +1,4 @@
 ﻿@using Portfolio.Services
-@namespace Portfolio.Components.Skills
 
 <Row Class="text-center">
     <Column ColumnSize="ColumnSize.Is3.OnDesktop"></Column>
@@ -8,10 +7,25 @@
     </Column>
     <Column ColumnSize="ColumnSize.Is4.OnDesktop.Is5.OnMobile">
         <Text Alignment="TextAlignment.Left">
-            @Name
+            @Name.GetEnumDescription()
         </Text>
     </Column>
-    <Tooltip Text="1 = just started, 5 = fully mastered">
+    
+    @if (!string.IsNullOrEmpty(TooltipText)) {
+        <Tooltip Text="@TooltipText">
+            <Column Float="Float.Right" ColumnSize="ColumnSize.IsAuto.OnDesktop.IsAuto.OnMobile">
+                <Text Alignment="TextAlignment.Right">
+                    @for (int i = 0; i < (int) Level; i++) {
+                        <i class="fas fa-circle"></i>
+                    }
+                    @for (int i = 0; i < 5 - (int) Level; i++) {
+                        <i class="far fa-circle"></i>
+                    }
+                </Text>
+            </Column>
+        </Tooltip>
+    }
+    else {
         <Column Float="Float.Right" ColumnSize="ColumnSize.IsAuto.OnDesktop.IsAuto.OnMobile">
             <Text Alignment="TextAlignment.Right">
                 @for (int i = 0; i < (int) Level; i++) {
@@ -22,16 +36,20 @@
                 }
             </Text>
         </Column>
-    </Tooltip>
+    }
+
 </Row>
 
 @code {
 
     [Parameter]
-    public string Name { get; set; }
+    public SkillName Name { get; set; } = SkillName.Unknown;
 
     [Parameter]
     public SkillLevel Level { get; set; } = SkillLevel.One;
 
+    [CascadingParameter(Name = nameof(SkillList.TooltipText))]
+    protected string TooltipText { get; set; }
+    
     private string IconPath => SkillIconSerivce.IconsPath[Name];
 }

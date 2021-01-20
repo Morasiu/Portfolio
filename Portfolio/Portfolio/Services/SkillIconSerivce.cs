@@ -1,24 +1,25 @@
 ﻿using System.Collections.Generic;
+using Portfolio.Components.Skills;
 
 namespace Portfolio.Services {
 	public class SkillIconSerivce {
-		public static Dictionary<string, string> IconsPath { get; } = new() {
-			{"C#", "Images/Skills/csharp.svg"},
-			{"Python", "Images/Skills/python.svg"},
-			{"Rust", "Images/Skills/rust.svg"},
-			{"ASP.Net", "Images/Skills/asp.net.svg"},
-			{"Visual Studio", "Images/Skills/visualstudio.svg"},
-			{"Git", "Images/Skills/git.svg"},
-			{"Unity", "Images/Skills/unity.svg"},
-			{"Linux", "Images/Skills/linux.svg"},
-			{"SQL", "Images/Skills/postgresql.svg"},
-			{"Google Cloud Platform", "Images/Skills/googlecloud.svg"},
-			{"Angular", "Images/Skills/angular.svg"},
-			{"Bootstrap", "Images/Skills/bootstrap.svg"},
-			{"Rest API", "Images/Skills/swagger.svg"},
-			{"English", "Images/Skills/english.svg"},
-			{"Unit Tests", "Images/Skills/checkmarx.svg"},
-			{"Design Patters", "Images/Skills/pencil-ruler.svg"},
+		public static Dictionary<SkillName, string> IconsPath { get; } = new() {
+			{SkillName.CSharp, "Images/Skills/csharp.svg"},
+			{SkillName.Python, "Images/Skills/python.svg"},
+			{SkillName.Rust, "Images/Skills/rust.svg"},
+			{SkillName.AspNet, "Images/Skills/asp.net.svg"},
+			{SkillName.VisualStudio, "Images/Skills/visualstudio.svg"},
+			{SkillName.Git, "Images/Skills/git.svg"},
+			{SkillName.Unity, "Images/Skills/unity.svg"},
+			{SkillName.Linux, "Images/Skills/linux.svg"},
+			{SkillName.Sql, "Images/Skills/postgresql.svg"},
+			{SkillName.GoogleCloudPlatform, "Images/Skills/googlecloud.svg"},
+			{SkillName.Angular, "Images/Skills/angular.svg"},
+			{SkillName.Bootstrap, "Images/Skills/bootstrap.svg"},
+			{SkillName.RestApi, "Images/Skills/swagger.svg"},
+			{SkillName.English, "Images/Skills/english.svg"},
+			{SkillName.UnitTests, "Images/Skills/checkmarx.svg"},
+			{SkillName.DesignPatterns, "Images/Skills/pencil-ruler.svg"},
 		};
 	}
 }

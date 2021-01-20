@@ -1,0 +1,12 @@
+﻿<CascadingValue Name="@nameof(TooltipText)" Value="TooltipText">
+    @ChildContent
+</CascadingValue>
+
+
+@code {
+    [Parameter]
+    public string TooltipText { get; set; }
+    
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}

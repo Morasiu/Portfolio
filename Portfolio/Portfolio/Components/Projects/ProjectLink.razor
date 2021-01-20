@@ -1,0 +1,25 @@
+﻿@if (!string.IsNullOrWhiteSpace(Link)) {
+    <Row Margin="Margin.Is3">
+        <Column>
+            <a href="@Link">
+                @if (Link.Contains("github")) {
+                    <Button Color="Color.Dark">
+                         <i class="fab fa-github"></i> Github
+                    </Button>
+                }
+                else {
+                    <Button Color="Color.Primary">
+                        Link
+                    </Button>
+                }
+            </a>
+        </Column>
+    </Row>
+}
+
+@code {
+
+    [Parameter]
+    public string Link { get; set; }
+
+}

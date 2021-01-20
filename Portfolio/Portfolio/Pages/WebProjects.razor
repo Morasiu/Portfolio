@@ -1,0 +1,55 @@
+﻿@page "/Projects/Web"
+@using Portfolio.Components.Skills
+@using Portfolio.Components.Projects
+
+<Container Class="text-center">
+    <ScreenshotProject
+        Name="TapTake"
+        ScreenshotPath="Images/Projects/TapTake.png"
+        ProjectLink="https://tap-take.pl"
+        Date="05.2019 - now">
+        <span>
+            TapTake is a shopping platform foccused on small and medium stores. User can make an order and grab it
+            locally or pick the delivery option. It also support item purchase per weight and card payments.
+            I was reposponsible for making a REST API using .Net Core, managing cloud and database.
+        </span>
+    </ScreenshotProject>
+    
+    <SimpleProject
+        Name="Naviq"
+        Date="04.2018 - 12.2018">
+        <span>
+            Naviq was ASP.Net Core Web API project. In short terms it was employee management system.
+            Unfortunately code and screenshots aren't available since it was inside, commercial project for Qumak S.A.
+        </span>
+        <Heading Size="HeadingSize.Is4" Class="text-center" Margin="Margin.Is2"> Used technologies</Heading>
+        <SkillList TooltipText="1 = hardly used 5 = used all the time">
+            <Skill Name="SkillName.CSharp" Level="SkillLevel.Five"/>
+            <Skill Name="SkillName.AspNet" Level="SkillLevel.Five"/>
+            <Skill Name="SkillName.VisualStudio" Level="SkillLevel.Four"/>
+            <Skill Name="SkillName.RestApi" Level="SkillLevel.Four"/>
+            <Skill Name="SkillName.UnitTests" Level="SkillLevel.Three"/>
+            <Skill Name="SkillName.DesignPatterns" Level="SkillLevel.Three"/>
+            <Skill Name="SkillName.Sql" Level="SkillLevel.Two"/>
+            <Skill Name="SkillName.Git" Level="SkillLevel.Two"/>
+        </SkillList>
+    </SimpleProject>
+    
+    <SimpleProject
+        Name="Qumak Managment System"
+        Date="07.2017 - 03.2018">
+        <span>
+            QMS was a system for remotely managing customized, linux terminals with virtual desktop.
+            It was able to send messages, update software, establish VNC connections and collect data.
+            It used raw sockets for communication. I was responsible for client app wrote in Python.
+        </span>
+        <Heading Size="HeadingSize.Is4" Class="text-center" Margin="Margin.Is2"> Used technologies</Heading>
+        <SkillList TooltipText="1 = hardly used 5 = used all the time">
+            <Skill Name="SkillName.Python" Level="SkillLevel.Five"/>
+            <Skill Name="SkillName.Linux" Level="SkillLevel.Four"/>
+            <Skill Name="SkillName.UnitTests" Level="SkillLevel.Three"/>
+            <Skill Name="SkillName.Git" Level="SkillLevel.Two"/>
+            <Skill Name="SkillName.DesignPatterns" Level="SkillLevel.One"/>
+        </SkillList>
+    </SimpleProject>
+</Container>

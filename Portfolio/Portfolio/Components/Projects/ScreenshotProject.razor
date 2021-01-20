@@ -1,0 +1,51 @@
+﻿<Container Margin="Margin.Is3.FromBottom.Is3.FromTop">
+    <Row>
+        <Column Class="text-center">
+            <Heading Size="HeadingSize.Is2" Class="text-center">@Name</Heading>
+        </Column>
+    </Row>
+
+    @if (!string.IsNullOrWhiteSpace(Date)) {
+        <Row>
+            <Column Class="text-center">
+                <i>@Date</i>
+            </Column>
+        </Row>
+    }
+
+    <Row>
+        <Column>
+            @ChildContent
+        </Column>
+    </Row>
+
+    @if (!string.IsNullOrWhiteSpace(ScreenshotPath)) {
+        <Row>
+            <Column>
+                <img src="@ScreenshotPath" alt="@Name screenshot" class="img"/>
+            </Column>
+        </Row>
+    }
+
+    <ProjectLink Link="@ProjectLink"/>
+
+</Container>
+
+@code {
+
+    [Parameter]
+    public string Name { get; set; }
+
+    [Parameter]
+    public string ScreenshotPath { get; set; }
+
+    [Parameter]
+    public string Date { get; set; }
+
+    [Parameter]
+    public string ProjectLink { get; set; }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+}

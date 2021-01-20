@@ -1,0 +1,58 @@
+﻿<Container Margin="Margin.Is3.FromBottom.Is3.FromTop" Class="text-center">
+    <Row>
+        <Column Class="text-center">
+            <Heading Size="HeadingSize.Is2" Class="text-center">@Name</Heading>
+        </Column>
+    </Row>
+
+    @if (!string.IsNullOrWhiteSpace(Date)) {
+        <Row>
+            <Column Class="text-center">
+                <i>@Date</i>
+            </Column>
+        </Row>
+    }
+
+    <Row>
+        <Column Class="text-center">
+            @ChildContent
+        </Column>
+    </Row>
+
+    <Row Margin="Margin.Is2.FromTop" Class="text-center">
+        @foreach (var screenshotPath in ScreenshotPath) {
+            <Column ColumnSize="new FluentColumn().WithColumnSize((ColumnWidth) (12 / ScreenshotPath.Length))
+                              .OnDesktop
+                              .IsFull.OnMobile" 
+                    Margin="Margin.Is2.FromTop.OnMobile.Is2.OnMobile.FromBottom">
+                <div class="smartphone">
+                    <div class="content">
+                        <img src="@screenshotPath" alt="@Name screenshot" class="img"/>
+                    </div>
+                </div>
+            </Column>
+        }
+    </Row>
+
+    <ProjectLink Link="@ProjectLink"/>
+
+</Container>
+
+@code {
+
+    [Parameter]
+    public string Name { get; set; }
+
+    [Parameter]
+    public string Date { get; set; }
+
+    [Parameter]
+    public string[] ScreenshotPath { get; set; }
+
+    [Parameter]
+    public string ProjectLink { get; set; }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+}
