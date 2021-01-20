@@ -13,6 +13,71 @@
 #logo[b-2gfoo7ak9l] {
     height: 50px;
 }
+/* /Components/Projects/MobileProject.razor.rz.scp.css */
+#description[b-7sq3a4tpc8] {
+    color: gray
+}
+
+#mobile[b-7sq3a4tpc8] {
+    margin: 10px;
+    width: 250px;
+}
+
+.smartphone[b-7sq3a4tpc8] {
+    position: relative;
+    width: 230px;
+    height: auto;
+    margin: auto;
+    border: 16px black solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+}
+
+/* The horizontal line on the top of the device */
+.smartphone[b-7sq3a4tpc8]:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone[b-7sq3a4tpc8]:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.smartphone .content[b-7sq3a4tpc8] {
+    width: auto;
+    height: auto;
+    background: black;
+}
+
+.content img[b-7sq3a4tpc8] {
+    width: 200px;
+    height: auto;
+}
+/* /Components/Projects/ScreenshotProject.razor.rz.scp.css */
+.img[b-engyp2y5jh] {
+    width: 100%;
+    margin-top: 1rem;
+}
 /* /Components/Skills/Skill.razor.rz.scp.css */
 .skill_icon[b-kn61bajtlo] {
     width: 1.5rem;
@@ -38,4 +103,8 @@ img[b-1r888hsw61] {
 .img-container[b-1r888hsw61] {
     text-align: center;
     margin-top: 0.5rem;
+}
+/* /Pages/WebProjects.razor.rz.scp.css */
+.skills[b-1j773eap5d] {
+    margin-top: 3rem;
 }
