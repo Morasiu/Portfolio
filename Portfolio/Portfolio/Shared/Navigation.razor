@@ -3,7 +3,7 @@
     Breakpoint="Breakpoint.Desktop"
     Background="Background.Dark"
     ThemeContrast="ThemeContrast.Dark"
-    @ref="_bar">
+    Visible="_shouldBeVisible">
     <BarBrand>
         <BarItem>
             <BarLink To="">
@@ -12,9 +12,9 @@
         </BarItem>
     </BarBrand>
     <BarToggler />
-    <BarMenu>
-        <BarStart>
-            <BarItem>
+    <BarMenu >
+        <BarStart >
+            <BarItem >
                 <BarDropdown>
                     <BarDropdownToggle>
                         <i class="fas fa-laptop-code"></i> Projects
@@ -30,25 +30,25 @@
                             <BarLink Class="text-dark" To="Projects/Mobile"><i class="fas fa-mobile"></i> Mobile</BarLink>
                         </BarDropdownItem>
                         <BarDropdownItem Clicked="CloseBar">
-                            <BarLink Class="text-dark" To="Projects/Web"><i class="fas fa-flask"></i> Others</BarLink>
+                            <BarLink Class="text-dark" To="Projects/Other"><i class="fas fa-flask"></i> Others</BarLink>
                         </BarDropdownItem>
                     </BarDropdownMenu>
                 </BarDropdown>
             </BarItem>
             <BarItem>
-                <BarLink To="@nameof(MyTimeline)"><i class="fas fa-stream"></i> Timeline</BarLink>
+                <BarLink Clicked="CloseBar" To="@nameof(MyTimeline)"><i class="fas fa-stream"></i> Timeline</BarLink>
             </BarItem>
             <BarItem>
-                <BarLink To="@(nameof(AboutMe))"><i class="far fa-user"></i> About Me</BarLink>
+                <BarLink Clicked="CloseBar" To="@(nameof(AboutMe))"><i class="far fa-user"></i> About Me</BarLink>
             </BarItem>
         </BarStart>
     </BarMenu>
 </Bar>
 
 @code {
-    private Bar _bar;
+    private bool _shouldBeVisible;
 
     private void CloseBar() {
-        _bar.Visible = false;
+        _shouldBeVisible = false;
     }
 }
