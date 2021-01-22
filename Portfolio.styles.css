@@ -1,29 +1,29 @@
 @import '_content/BlazorTimeline/BlazorTimeline.bundle.scp.css';
 
 /* /Components/Achivements/Achivement.razor.rz.scp.css */
-#logo[b-fgx75a0lp7] {
+#logo[b-ku7pyz6gb1] {
     height: 50px;
     width: 80%;
 }
 /* /Components/Educations/Education.razor.rz.scp.css */
-#logo[b-norz69x5a7] {
+#logo[b-8ay91oy6l7] {
     height: 50px;
 }
 /* /Components/Expriences/Experience.razor.rz.scp.css */
-#logo[b-1ufhgvipu6] {
+#logo[b-2gfoo7ak9l] {
     height: 50px;
 }
 /* /Components/Projects/MobileProject.razor.rz.scp.css */
-#description[b-45nk3dokal] {
+#description[b-7sq3a4tpc8] {
     color: gray
 }
 
-#mobile[b-45nk3dokal] {
+#mobile[b-7sq3a4tpc8] {
     margin: 10px;
     width: 250px;
 }
 
-.smartphone[b-45nk3dokal] {
+.smartphone[b-7sq3a4tpc8] {
     position: relative;
     width: 230px;
     height: auto;
@@ -35,7 +35,7 @@
 }
 
 /* The horizontal line on the top of the device */
-.smartphone[b-45nk3dokal]:before {
+.smartphone[b-7sq3a4tpc8]:before {
     content: '';
     display: block;
     width: 60px;
@@ -49,7 +49,7 @@
 }
 
 /* The circle on the bottom of the device */
-.smartphone[b-45nk3dokal]:after {
+.smartphone[b-7sq3a4tpc8]:after {
     content: '';
     display: block;
     width: 35px;
@@ -63,52 +63,52 @@
 }
 
 /* The screen (or content) of the device */
-.smartphone .content[b-45nk3dokal] {
+.smartphone .content[b-7sq3a4tpc8] {
     width: auto;
     height: auto;
     background: black;
 }
 
-.content img[b-45nk3dokal] {
+.content img[b-7sq3a4tpc8] {
     width: 200px;
     height: auto;
 }
 /* /Components/Projects/ProjectName.razor.rz.scp.css */
-h2[b-j72s1b1igp] {
+h2[b-0oydd3eg8k] {
     word-break: break-all;
 }
 /* /Components/Projects/ScreenshotProject.razor.rz.scp.css */
-.img[b-f1wud0qeaw] {
+.img[b-engyp2y5jh] {
     width: 100%;
     margin-top: 1rem;
 }
 /* /Components/Skills/Skill.razor.rz.scp.css */
-.skill_icon[b-kvh3zjdixf] {
+.skill_icon[b-kn61bajtlo] {
     width: 1.5rem;
     height: 24px;
     filter: invert(100%) sepia(5%) saturate(7471%) hue-rotate(138deg) brightness(115%) contrast(115%);
 }
 /* /Pages/AboutMe.razor.rz.scp.css */
-#content[b-alt2jmvam8] {
+#content[b-vc1rxuirtp] {
     margin: 20px;
 }
 
 @media print {
-    .hide-print[b-alt2jmvam8] {
+    .hide-print[b-vc1rxuirtp] {
         display: none !important;
     }
 }
 /* /Pages/MyTimeline.razor.rz.scp.css */
-img[b-luecnk7vtn] {
+img[b-1r888hsw61] {
     max-width:100%;
     max-height:100%;
 }
 
-.img-container[b-luecnk7vtn] {
+.img-container[b-1r888hsw61] {
     text-align: center;
     margin-top: 0.5rem;
 }
 /* /Pages/WebProjects.razor.rz.scp.css */
-.skills[b-hckhnb8k1t] {
+.skills[b-1j773eap5d] {
     margin-top: 3rem;
 }
