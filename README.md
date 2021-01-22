@@ -1,15 +1,7 @@
 # Portfolio
-It's my portfolio
 
-You can check it [here](https://Morasiu.github.io/portfolio/)
+## What are you doing here?!
 
+![Leave this place meme](leave-this-place-and-never-come-bak.jpg)
 
-How to deploy:
-
-* cd Portfolio
-* ng build --prod --base-href "https://Morasiu.github.io/portfolio/"
-* ngh --dir dist/portfolio
-
-Tips:
-
-* Use path "./assets/something" for images
+Go [morasiu.github.io](morasiu.github.io)
