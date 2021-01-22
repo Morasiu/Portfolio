@@ -30,8 +30,8 @@ jobs:
     # publishes Blazor project to the release-folder
     - name: Publish .NET Core Project
       run: 
-            dotnet publish Portfolio/Portfolio/Portfolio.csproj -c Release -o release --nologo |
-            cp release/wwwroot/index.html release/wwwroot/404.html |
+            dotnet publish Portfolio/Portfolio/Portfolio.csproj -c Release -o release --nologo
+            cp release/wwwroot/index.html release/wwwroot/404.html
       
     # changes the base-tag in index.html from '/' to 'BlazorGitHubPagesDemo' to match GitHub Pages repository subdirectory
     #- name: Change base-tag in index.html from / to Portfolio
