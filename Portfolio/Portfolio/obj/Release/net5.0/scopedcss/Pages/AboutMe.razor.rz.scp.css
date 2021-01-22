@@ -1,0 +1,9 @@
+#content[b-alt2jmvam8] {
+    margin: 20px;
+}
+
+@media print {
+    .hide-print[b-alt2jmvam8] {
+        display: none !important;
+    }
+}
