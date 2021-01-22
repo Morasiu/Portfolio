@@ -10,6 +10,7 @@
         <PackageReference Include="BlazorTimeline" Version="1.2.0" />
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="5.0.1" />
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="5.0.1" PrivateAssets="all" />
+        <PackageReference Include="PublishSPAforGitHubPages.Build" Version="1.2.0" />
         <PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
     </ItemGroup>
 

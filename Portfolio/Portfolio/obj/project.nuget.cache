@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "A5a+3HLBxnIPmrxooKk1lia+t37V/Q6j5/IComF4SfyjOy11knhbreraZTqYtAKugdpTHy6nGkXpaOP65LENMg==",
+  "dgSpecHash": "RYudhKPj+nICguMxRpBwwqQNmR7mURG2DXr3f72BjjBAcJfvcL5VgeBghwXMzDqPrCbM/Y5T1CvElP/RHGURjQ==",
   "success": true,
   "projectFilePath": "D:\\Projekty\\Portfolio\\Portfolio\\Portfolio\\Portfolio.csproj",
   "expectedPackageFiles": [
@@ -32,6 +32,7 @@
     "C:\\Users\\Morasiu\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\Morasiu\\.nuget\\packages\\microsoft.jsinterop\\5.0.1\\microsoft.jsinterop.5.0.1.nupkg.sha512",
     "C:\\Users\\Morasiu\\.nuget\\packages\\microsoft.jsinterop.webassembly\\5.0.1\\microsoft.jsinterop.webassembly.5.0.1.nupkg.sha512",
+    "C:\\Users\\Morasiu\\.nuget\\packages\\publishspaforgithubpages.build\\1.2.0\\publishspaforgithubpages.build.1.2.0.nupkg.sha512",
     "C:\\Users\\Morasiu\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
     "C:\\Users\\Morasiu\\.nuget\\packages\\system.net.http.json\\5.0.0\\system.net.http.json.5.0.0.nupkg.sha512",
     "C:\\Users\\Morasiu\\.nuget\\packages\\microsoft.netcore.app.runtime.browser-wasm\\5.0.1\\microsoft.netcore.app.runtime.browser-wasm.5.0.1.nupkg.sha512"
