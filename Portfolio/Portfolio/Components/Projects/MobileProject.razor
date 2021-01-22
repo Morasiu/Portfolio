@@ -1,13 +1,7 @@
 ﻿<Container Margin="Margin.Is3.FromBottom.Is3.FromTop" Class="text-center">
     <ProjectName Name="@Name"/>
 
-    @if (!string.IsNullOrWhiteSpace(Date)) {
-        <Row>
-            <Column Class="text-center">
-                <i>@Date</i>
-            </Column>
-        </Row>
-    }
+    <ProjectDate Date="@Date"/>
 
     <Row>
         <Column Class="text-center">

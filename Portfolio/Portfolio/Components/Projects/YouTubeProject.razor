@@ -9,13 +9,16 @@
         </Column>
     </Row>
 
-    @if (!string.IsNullOrWhiteSpace(ScreenshotPath)) {
-        <Row>
-            <Column>
-                <img src="@ScreenshotPath" alt="@Name screenshot" class="img"/>
-            </Column>
-        </Row>
-    }
+    <Row>
+        <Column>
+              <div class="text-center embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item"
+                src="@YouTubeLink"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+              </div>
+        </Column>
+    </Row>
 
     <ProjectLink Link="@ProjectLink"/>
 
@@ -27,11 +30,11 @@
     public string Name { get; set; }
 
     [Parameter]
-    public string ScreenshotPath { get; set; }
-
-    [Parameter]
     public string Date { get; set; }
-
+    
+    [Parameter]
+    public string YouTubeLink { get; set; }
+    
     [Parameter]
     public string ProjectLink { get; set; }
 

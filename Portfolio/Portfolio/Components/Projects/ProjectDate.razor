@@ -1,0 +1,12 @@
+﻿@if (!string.IsNullOrWhiteSpace(Date)) {
+    <Row>
+        <Column Class="text-center">
+            <i>@Date</i>
+        </Column>
+    </Row>
+}
+
+@code {
+    [Parameter]
+    public string Date { get; set; }
+}
