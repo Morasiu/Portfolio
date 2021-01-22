@@ -678,3 +678,7 @@ D:\Projekty\Portfolio\Portfolio\Portfolio\obj\Release\net5.0\Razor\Components\Pr
 D:\Projekty\Portfolio\Portfolio\Portfolio\obj\Release\net5.0\scopedcss\Components\Projects\ProjectName.razor.rz.scp.css
 D:\Projekty\Portfolio\Portfolio\Portfolio\obj\Release\net5.0\RazorDeclaration\Pages\GameProjects.razor.g.cs
 D:\Projekty\Portfolio\Portfolio\Portfolio\obj\Release\net5.0\Razor\Pages\GameProjects.razor.g.cs
+D:\Projekty\Portfolio\Portfolio\Portfolio\obj\Release\net5.0\RazorDeclaration\Components\Projects\ProjectDate.razor.g.cs
+D:\Projekty\Portfolio\Portfolio\Portfolio\obj\Release\net5.0\RazorDeclaration\Components\Projects\YouTubeProject.razor.g.cs
+D:\Projekty\Portfolio\Portfolio\Portfolio\obj\Release\net5.0\Razor\Components\Projects\ProjectDate.razor.g.cs
+D:\Projekty\Portfolio\Portfolio\Portfolio\obj\Release\net5.0\Razor\Components\Projects\YouTubeProject.razor.g.cs

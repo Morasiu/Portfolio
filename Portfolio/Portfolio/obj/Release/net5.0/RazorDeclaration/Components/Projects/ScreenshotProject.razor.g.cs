@@ -104,7 +104,7 @@ using Blazorise;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 30 "D:\Projekty\Portfolio\Portfolio\Portfolio\Components\Projects\ScreenshotProject.razor"
+#line 24 "D:\Projekty\Portfolio\Portfolio\Portfolio\Components\Projects\ScreenshotProject.razor"
        
 
     [Parameter]

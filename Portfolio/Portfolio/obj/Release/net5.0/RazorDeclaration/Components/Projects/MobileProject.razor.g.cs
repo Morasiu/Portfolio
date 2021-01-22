@@ -104,7 +104,7 @@ using Blazorise;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 37 "D:\Projekty\Portfolio\Portfolio\Portfolio\Components\Projects\MobileProject.razor"
+#line 31 "D:\Projekty\Portfolio\Portfolio\Portfolio\Components\Projects\MobileProject.razor"
        
 
     [Parameter]
