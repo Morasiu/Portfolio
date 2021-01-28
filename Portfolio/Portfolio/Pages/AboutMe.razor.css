@@ -2,8 +2,19 @@
     margin: 20px;
 }
 
-@media print {
-    .hide-print {
-        display: none !important;
+.show_print {
+    visibility: hidden;
+}
+
+@media only print {
+    body {
+        color: #343a40 !important;
+        content:"only visible for print";
+    }
+    .hide_print {
+        visibility: hidden;
+    }
+    .skill_icon {
+        filter: invert(0%) sepia(96%) saturate(16%) hue-rotate(282deg) brightness(89%) contrast(104%);
     }
 }
