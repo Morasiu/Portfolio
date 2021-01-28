@@ -93,9 +93,20 @@ h2[b-0oydd3eg8k] {
     margin: 20px;
 }
 
-@media print {
-    .hide-print[b-vc1rxuirtp] {
-        display: none !important;
+.show_print[b-vc1rxuirtp] {
+    visibility: hidden;
+}
+
+@media only print {
+    body[b-vc1rxuirtp] {
+        color: #343a40 !important;
+        content:"only visible for print";
+    }
+    .hide_print[b-vc1rxuirtp] {
+        visibility: hidden;
+    }
+    .skill_icon[b-vc1rxuirtp] {
+        filter: invert(0%) sepia(96%) saturate(16%) hue-rotate(282deg) brightness(89%) contrast(104%);
     }
 }
 /* /Pages/MyTimeline.razor.rz.scp.css */
