@@ -1,6 +1,7 @@
 ﻿@page "/MyTimeline"
 
 @using BlazorTimeline
+@using Portfolio.Components.Skills
 
 <Timeline Title="My Career"
           TitleColor="#FFFFFF"
@@ -11,12 +12,29 @@
     <TimelineItem Title="The story still continues..." Time="Now">
         I'm still learning new stuff. Working on some cool things and enjoying programming!
     </TimelineItem>
-    
+
+    <TimelineItem Title="Good bye TapTake, hello OEC!" Time="01.04.2021">
+        I finished my work on the TapTake project (LINK) and got an offer from an OEConnection, which makes software for
+        many automotive companies. I'm currently developing a web application using Vue.js and .Net Core (C#).
+        <br/>
+        <div style="justify-content: center; display: flex">
+            <img src="Images/Companies/oec.svg" style="margin-top: 20px" width="200px"/>
+        </div>
+
+        <br/>
+        <br/>
+        <Skill Name="SkillName.AspNet"/>
+        <Skill Name="SkillName.VisualStudio"/>
+        <Skill Name="SkillName.Git"/>
+        <Skill Name="SkillName.Vue"/>
+        <Skill Name="SkillName.Bootstrap"/>
+    </TimelineItem>
+
     <TimelineItem Title="My portfolio is live!" Time="23.01.2021">
-        I've created this portfolio which are you looking at right now!. I've used Blazor with Blazorise and Github Actions 
+        I've created this portfolio which are you looking at right now!. I've used Blazor with Blazorise and Github Actions
         to config automatically deploy to Github Pages.
     </TimelineItem>
-    
+
     <TimelineItem Title="1st Place Hackathon Sheep Your Hack 2" Time="17.11.2020">
         I've attended SheepYourHack 2 hackthon with two of mine friends and won.
         We've made an app called web Printy, which solves the problem of difficult access to printing spots.
@@ -26,7 +44,7 @@
         </div>
     </TimelineItem>
     <TimelineItem Title="My first article" Time="17.09.2020" ButtonText="LINK" Link="https://bulldogjob.pl/news/1294-tworzenie-biblioteki-do-web-api-w-net">
-        I've written an article about creating Web API client in .Net and it was published on popular 
+        I've written an article about creating Web API client in .Net and it was published on popular
         programming site called BulldogJob. I've used Restsharp as an example of the helper library.
         It contained integrations tests guide, publishing packages to nuget and more.
         <div class="img-container">

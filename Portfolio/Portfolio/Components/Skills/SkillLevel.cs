@@ -1,5 +1,6 @@
 ﻿namespace Portfolio.Components.Skills {
 	public enum SkillLevel {
+		Zero = 0,
 		One = 1,
 		Two = 2,
 		Three = 3,

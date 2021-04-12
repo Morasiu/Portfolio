@@ -20,6 +20,7 @@ namespace Portfolio.Services {
 			{SkillName.English, "Images/Skills/english.svg"},
 			{SkillName.UnitTests, "Images/Skills/checkmarx.svg"},
 			{SkillName.DesignPatterns, "Images/Skills/pencil-ruler.svg"},
+			{SkillName.Vue, "Images/Skills/vue.svg"},
 		};
 	}
 }

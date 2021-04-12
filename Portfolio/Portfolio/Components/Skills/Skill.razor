@@ -10,9 +10,23 @@
             @Name.GetEnumDescription()
         </Text>
     </Column>
-    
-    @if (!string.IsNullOrEmpty(TooltipText)) {
-        <Tooltip Text="@TooltipText">
+
+    @if (Level != SkillLevel.Zero) {
+        @if (!string.IsNullOrEmpty(TooltipText)) {
+            <Tooltip Text="@TooltipText">
+                <Column Float="Float.Right" ColumnSize="ColumnSize.IsAuto.OnDesktop.IsAuto.OnMobile">
+                    <Text Alignment="TextAlignment.Right">
+                        @for (int i = 0; i < (int) Level; i++) {
+                            <i class="fas fa-circle"></i>
+                        }
+                        @for (int i = 0; i < 5 - (int) Level; i++) {
+                            <i class="far fa-circle"></i>
+                        }
+                    </Text>
+                </Column>
+            </Tooltip>
+        }
+        else {
             <Column Float="Float.Right" ColumnSize="ColumnSize.IsAuto.OnDesktop.IsAuto.OnMobile">
                 <Text Alignment="TextAlignment.Right">
                     @for (int i = 0; i < (int) Level; i++) {
@@ -23,19 +37,7 @@
                     }
                 </Text>
             </Column>
-        </Tooltip>
-    }
-    else {
-        <Column Float="Float.Right" ColumnSize="ColumnSize.IsAuto.OnDesktop.IsAuto.OnMobile">
-            <Text Alignment="TextAlignment.Right">
-                @for (int i = 0; i < (int) Level; i++) {
-                    <i class="fas fa-circle"></i>
-                }
-                @for (int i = 0; i < 5 - (int) Level; i++) {
-                    <i class="far fa-circle"></i>
-                }
-            </Text>
-        </Column>
+        }
     }
 
 </Row>
@@ -46,10 +48,10 @@
     public SkillName Name { get; set; } = SkillName.Unknown;
 
     [Parameter]
-    public SkillLevel Level { get; set; } = SkillLevel.One;
+    public SkillLevel Level { get; set; } = SkillLevel.Zero;
 
     [CascadingParameter(Name = nameof(SkillList.TooltipText))]
     protected string TooltipText { get; set; }
-    
+
     private string IconPath => SkillIconSerivce.IconsPath[Name];
 }
