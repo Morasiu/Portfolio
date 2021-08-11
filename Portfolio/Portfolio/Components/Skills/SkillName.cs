@@ -27,6 +27,7 @@ namespace Portfolio.Components.Skills {
 		UnitTests,
 		[Description("Design Patterns")]
 		DesignPatterns,
-		Vue
+		Vue,
+		JavaScript
 	}
 }

@@ -21,6 +21,7 @@ namespace Portfolio.Services {
 			{SkillName.UnitTests, "Images/Skills/checkmarx.svg"},
 			{SkillName.DesignPatterns, "Images/Skills/pencil-ruler.svg"},
 			{SkillName.Vue, "Images/Skills/vue.svg"},
+			{SkillName.JavaScript, "Images/Skills/javascript.svg"},
 		};
 	}
 }

@@ -1,10 +1,18 @@
 ﻿@using Portfolio.Services
 <Row Margin="Margin.Is4.FromTop">
     <Column ColumnSize="ColumnSize.Is1.OnDesktop.IsAuto.OnMobile"></Column>
-    <Column ColumnSize="ColumnSize.IsFull.OnMobile.Is3.OnDesktop">
-        <Tooltip Text="@CompanyName">
-            <img src="@ImagePath" alt="@($"{CompanyName} logo")" id="logo"/>
-        </Tooltip>
+    <Column ColumnSize="ColumnSize.IsFull.OnMobile.Is3.OnDesktop" Class="align-self-center">
+        @if (ImagePath != string.Empty) {
+            <Tooltip Text="@CompanyName">
+                <img src="@ImagePath" alt="@($"{CompanyName} logo")" id="logo"/>
+            </Tooltip>
+        }
+        else {
+            <Heading Size="HeadingSize.Is3" Alignment="TextAlignment.Center">
+                @CompanyName
+            </Heading>
+        }
+
     </Column>
     <Column ColumnSize="ColumnSize.IsFull.OnMobile.Is4.OnDesktop" Class="align-self-center">
         <Heading Size="HeadingSize.Is4" Alignment="TextAlignment.Center">@JobTitle</Heading>
@@ -43,5 +51,5 @@
     [Parameter]
     public string JobDescription { get; set; }
 
-    private string ImagePath => CompanyImageService.Images[CompanyName];
+    private string ImagePath => CompanyImageService.GetImagePath(CompanyName);
 }

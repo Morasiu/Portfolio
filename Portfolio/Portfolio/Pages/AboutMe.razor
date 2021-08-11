@@ -52,7 +52,7 @@
 <SkillList TooltipText="1 = just started, 5 = fully mastered">
     <Skill Name="SkillName.CSharp" Level="SkillLevel.Four"/>
     <Skill Name="SkillName.Python" Level="SkillLevel.Two"/>
-    <Skill Name="SkillName.Rust" Level="SkillLevel.One"/>
+    <Skill Name="SkillName.JavaScript" Level="SkillLevel.One"/>
 </SkillList>
 
 <Row>
@@ -67,11 +67,10 @@
     <Skill Name="SkillName.AspNet" Level="SkillLevel.Four"/>
     <Skill Name="SkillName.VisualStudio" Level="SkillLevel.Four"/>
     <Skill Name="SkillName.Git" Level="SkillLevel.Three"/>
-    <Skill Name="SkillName.Unity" Level="SkillLevel.Two"/>
+    <Skill Name="SkillName.Vue" Level="SkillLevel.Two"/>
     <Skill Name="SkillName.Linux" Level="SkillLevel.Two"/>
     <Skill Name="SkillName.Sql" Level="SkillLevel.Two"/>
     <Skill Name="SkillName.GoogleCloudPlatform" Level="SkillLevel.One"/>
-    <Skill Name="SkillName.Angular" Level="SkillLevel.One"/>
     <Skill Name="SkillName.Bootstrap" Level="SkillLevel.One"/>
 </SkillList>
 
@@ -93,10 +92,17 @@
 <AboutSectionTitle Title="Experience"/>
 
 <Experience
-    CompanyName="Code Hydra"
-    JobTitle="Owner"
-    JobDescription=@("I started this company in May 2019. Right now I'm just a self-employed freelancer looking for some opportunities. I'm specialized in .Net Core Web API projects.")
-    JobStart="@(new DateTime(2019, 05, 1))"/>
+    CompanyName="OEConnection"
+    JobTitle="Software Engineer"
+    JobDescription=@("OEConnection which makes software for many automotive companies. I'm currently developing a web application using Vue.js and .Net Core (C#) and managing cloud using Azure DevOps.")
+    JobStart="@(new DateTime(2021, 04, 1))"/>
+
+<Experience
+    CompanyName="TapTake"
+    JobTitle="Main Backend Developer"
+    JobDescription=@("TapTake was a shopping web platform focused on small and medium stores. I was responsible for making a REST API using .Net Core, managing the cloud in GCP and SQL database.")
+    JobStart="@(new DateTime(2019, 05, 1))"
+    JobEnd="@(new DateTime(2021, 03, 1))"/>
 
 <Experience
     CompanyName="Tronel"
@@ -118,7 +124,6 @@
     JobDescription=@("I wrote multiple Python apps for our QumakOS. It was an Arch-based Linux distro. For example Digital Signage system, document trimmer (using OpenCV), chat, auto updater, push notification app, API client.")
     JobStart="@(new DateTime(2017, 07, 1))"
     JobEnd="@(new DateTime(2018, 03, 1))"/>
-
 
 
 <AboutSectionTitle Title="Education"/>
