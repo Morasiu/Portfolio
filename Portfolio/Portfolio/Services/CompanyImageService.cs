@@ -7,6 +7,7 @@ namespace Portfolio.Services {
 			{"Tronel", "Images/Companies/tronel.png"},
 			{"Qumak", "Images/Companies/qumak.png"},
 			{"OEConnection", "Images/Companies/oec.svg"},
+			{"Herodot", "Images/Companies/herodot.svg"},
 		};
 
 		public static string GetImagePath(string companyName) {
