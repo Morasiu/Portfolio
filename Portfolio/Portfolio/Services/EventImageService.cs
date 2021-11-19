@@ -6,6 +6,7 @@ namespace Portfolio.Services {
 			{"City Coders Płock", "Images/Achievements/Logo_City_coders_plock.png"},
 			{"Sheep Your Hack", "Images/Achievements/sheep_your_hack.png"},
 			{"BulldogJob article", "Images/Achievements/BulldogJob_logo.png"},
+			{"Aquathon", "Images/Achievements/aquathon_logo.png"},
 		};
 	}
 }
