@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel;
-using System.Text.RegularExpressions;
 
 namespace Portfolio.Components.Skills {
 	public enum SkillName {

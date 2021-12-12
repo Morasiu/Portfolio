@@ -198,7 +198,7 @@
     AchievementName="City Coders Płock"
     Title="1st Place Hackathon City Coders Płock"
     AchievementDate="@(new DateTime(2017, 05, 21))"
-    Description="I've made app called TeamUp. It was an app for finding sport partners, teams for competitive games, gym buddies etc. I was responsible for making Android App using Android studio."/>
+    Description="I've made app called TeamUp. It was an app for finding sport partners, teams for competitive games, gym buddies etc. I was responsible for making Android App using Android studio." />
 
 <Row Class="justify-content-center show_print">
     <Column Class="show_print">
@@ -231,12 +231,12 @@
 </Container>
 </div>
 
-@inject IJSRuntime JS;
+@inject IJSRuntime _js;
 
 @code {
 
     async Task DownloadPdf() {
-        await JS.InvokeVoidAsync("downloadPdfJs", "content");
+        await _js.InvokeVoidAsync("downloadPdfJs", "content");
     }
 
 }

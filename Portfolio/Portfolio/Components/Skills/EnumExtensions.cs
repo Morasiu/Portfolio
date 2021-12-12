@@ -1,6 +1,5 @@
 ﻿using System;
 using System.ComponentModel;
-using System.Reflection;
 
 namespace Portfolio.Components.Skills {
 	public static class EnumExtensions {

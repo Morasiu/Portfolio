@@ -6,7 +6,7 @@
         <object data="@IconPath" type="image/svg+xml" class="skill_icon"></object>
     </Column>
     <Column ColumnSize="ColumnSize.Is6.OnDesktop.Is5.OnMobile">
-        <Text Alignment="TextAlignment.Left">
+        <Text Alignment="TextAlignment.Start">
             @Name.GetEnumDescription()
         </Text>
     </Column>
@@ -14,8 +14,8 @@
     @if (Level != SkillLevel.Zero) {
         @if (!string.IsNullOrEmpty(TooltipText)) {
             <Tooltip Text="@TooltipText">
-                <Column Float="Float.Right" ColumnSize="ColumnSize.IsAuto.OnDesktop.IsAuto.OnMobile">
-                    <Text Alignment="TextAlignment.Right">
+                <Column Float="Float.End" ColumnSize="ColumnSize.IsAuto.OnDesktop.IsAuto.OnMobile">
+                    <Text Alignment="TextAlignment.End">
                         @for (int i = 0; i < (int) Level; i++) {
                             <i class="fas fa-circle"></i>
                         }
@@ -27,8 +27,8 @@
             </Tooltip>
         }
         else {
-            <Column Float="Float.Right" ColumnSize="ColumnSize.IsAuto.OnDesktop.IsAuto.OnMobile">
-                <Text Alignment="TextAlignment.Right">
+            <Column Float="Float.End" ColumnSize="ColumnSize.IsAuto.OnDesktop.IsAuto.OnMobile">
+                <Text Alignment="TextAlignment.End">
                     @for (int i = 0; i < (int) Level; i++) {
                         <i class="fas fa-circle"></i>
                     }
