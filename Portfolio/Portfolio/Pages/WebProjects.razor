@@ -2,6 +2,33 @@
 @using Portfolio.Components.Skills
 
 <Container Class="text-center">
+    <MobileProject
+        Name="Raindrop"
+        Date="07.11.2021"
+        ScreenshotPath="@(new[] {
+                            "https://user-images.githubusercontent.com/19236279/142597187-a2d185c4-4e20-491f-b30e-8d88812baf32.png",
+                            "https://user-images.githubusercontent.com/19236279/142597389-081095ae-d306-4f9d-bf1a-1bbba795815a.png",
+                            "https://user-images.githubusercontent.com/19236279/142597679-556785a4-917e-42a3-9bb7-4515eebe5adf.png",
+                            "https://user-images.githubusercontent.com/19236279/142597504-20e2fe2e-a95c-4ae1-a69d-d424b4db7f5c.png"
+                        })"
+        ProjectLink="https://github.com/DzordzoMen/raindrop">
+
+        Raindrop is an intelligent assistant that helps you set up and manage your home rainwater tank. 
+        Made at Aquathon 2021. I was responsible for making a REST API using .Net 5.
+
+    </MobileProject>
+
+    <ScreenshotProject
+        Name="TapTake"
+        ScreenshotPath="Images/Projects/TapTake.png"
+        ProjectLink="https://tap-take.pl"
+        Date="05.2019 - 04.2021">
+        <span>
+            TapTake is a shopping platform focused on small and medium stores. User can make an order and grab it locally or
+            pick the delivery option. It also supports item purchase per weight and card payments. I was responsible for
+            making a REST API using .Net Core, managing cloud and database.
+        </span>
+    </ScreenshotProject>
     <ScreenshotProject
         Name="TapTake"
         ScreenshotPath="Images/Projects/TapTake.png"
@@ -19,7 +46,7 @@
         ScreenshotPath="https://github.com/Morasiu/BlazorTimeline/raw/develop/Images/Main.png"
         ProjectLink="https://github.com/Morasiu/BlazorTimeline"
         Date="16.01.2021">
-        
+
         While I was working on my portfolio in Blazor, I needed some Timeline component. I couldn't find one, so
         I've created one by myself on published it on GitHub and Nuget. It was well-received by the Blazor community.
 
@@ -28,7 +55,7 @@
     <MobileProject
         Name="Printy"
         Date="26.11.2020"
-        ScreenshotPath="@(new[] {"https://raw.githubusercontent.com/Morasiu/PrintyAPI/main/Docs/printy.gif"})"
+        ScreenshotPath="@(new[] { "https://raw.githubusercontent.com/Morasiu/PrintyAPI/main/Docs/printy.gif" })"
         ProjectLink="https://github.com/Morasiu/PrintyAPI">
 
         Printy is a web app, which solves the problem of difficult access to printing spots. Printy allows any private
